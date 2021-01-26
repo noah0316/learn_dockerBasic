@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nginx-example:
+    image: nginx:latest
+    ports:
+      - "50000:80"
+    volumes:
+      - ./:/usr/share/nginx/html
